@@ -1,0 +1,755 @@
+/* =============================================================================
+   ADVANCED ANIMATIONS & KEYFRAMES
+   ============================================================================= */
+
+/* =============================================================================
+   MOLECULE ANIMATIONS
+   ============================================================================= */
+
+@keyframes moleculeBounce {
+    0%, 100% {
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-15px) scale(1.1) rotate(90deg);
+    }
+    50% {
+        transform: translateY(-30px) scale(1.2) rotate(180deg);
+    }
+    75% {
+        transform: translateY(-15px) scale(1.1) rotate(270deg);
+    }
+}
+
+@keyframes moleculeOrbit {
+    0% {
+        transform: rotate(0deg) translateX(50px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(50px) rotate(-360deg);
+    }
+}
+
+@keyframes electronFlow {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}
+
+@keyframes energyPulse {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(255, 235, 59, 0.3);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 235, 59, 0.8), 0 0 50px rgba(255, 235, 59, 0.5);
+        transform: scale(1.15);
+    }
+}
+
+/* =============================================================================
+   CHLOROPLAST ANIMATIONS
+   ============================================================================= */
+
+@keyframes chloroplastBreathing {
+    0%, 100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    50% {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+    }
+}
+
+@keyframes thylakoidGlow {
+    0%, 100% {
+        box-shadow: 
+            inset 0 0 20px rgba(139, 195, 74, 0.3),
+            0 0 20px rgba(139, 195, 74, 0.2);
+    }
+    50% {
+        box-shadow: 
+            inset 0 0 40px rgba(139, 195, 74, 0.8),
+            0 0 40px rgba(139, 195, 74, 0.6);
+    }
+}
+
+@keyframes stromaMovement {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* =============================================================================
+   LIGHT & PHOTON ANIMATIONS
+   ============================================================================= */
+
+@keyframes photonTravel {
+    0% {
+        transform: translateX(-50px) translateY(0px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(300px) translateY(-20px);
+        opacity: 0;
+    }
+}
+
+@keyframes lightWave {
+    0% {
+        transform: translateX(-100%) scaleY(1);
+    }
+    50% {
+        transform: translateX(0%) scaleY(1.2);
+    }
+    100% {
+        transform: translateX(100%) scaleY(1);
+    }
+}
+
+@keyframes sunGlow {
+    0%, 100% {
+        box-shadow: 
+            0 0 20px rgba(255, 193, 7, 0.5),
+            0 0 40px rgba(255, 193, 7, 0.3),
+            0 0 60px rgba(255, 193, 7, 0.1);
+    }
+    50% {
+        box-shadow: 
+            0 0 30px rgba(255, 193, 7, 0.8),
+            0 0 60px rgba(255, 193, 7, 0.6),
+            0 0 90px rgba(255, 193, 7, 0.3);
+    }
+}
+
+/* =============================================================================
+   ATP & ENERGY ANIMATIONS
+   ============================================================================= */
+
+@keyframes atpSynthesis {
+    0% {
+        transform: scale(0.8) rotate(0deg);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes adpToAtp {
+    0% {
+        background: linear-gradient(135deg, #f44336 0%, #e91e63 100%);
+        transform: scale(1);
+    }
+    50% {
+        background: linear-gradient(135deg, #ff9800 0%, #ffc107 100%);
+        transform: scale(1.1);
+    }
+    100% {
+        background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);
+        transform: scale(1);
+    }
+}
+
+@keyframes energyTransfer {
+    0% {
+        transform: translateX(0) scale(1);
+        background: rgba(255, 235, 59, 0.8);
+    }
+    25% {
+        transform: translateX(25px) scale(1.2);
+        background: rgba(255, 193, 7, 0.9);
+    }
+    50% {
+        transform: translateX(50px) scale(1.4);
+        background: rgba(255, 152, 0, 1);
+    }
+    75% {
+        transform: translateX(75px) scale(1.2);
+        background: rgba(139, 195, 74, 0.9);
+    }
+    100% {
+        transform: translateX(100px) scale(1);
+        background: rgba(76, 175, 80, 0.8);
+    }
+}
+
+/* =============================================================================
+   CARBON FIXATION ANIMATIONS
+   ============================================================================= */
+
+@keyframes co2Absorption {
+    0% {
+        transform: translateY(-50px) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px) scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(50px) scale(0.8);
+        opacity: 0;
+    }
+}
+
+@keyframes rubpCycle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+    }
+    75% {
+        transform: rotate(270deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@keyframes glucoseFormation {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+        background: radial-gradient(circle, transparent 0%, transparent 100%);
+    }
+    25% {
+        transform: scale(0.3) rotate(90deg);
+        opacity: 0.3;
+        background: radial-gradient(circle, rgba(255, 193, 7, 0.3) 0%, transparent 70%);
+    }
+    50% {
+        transform: scale(0.6) rotate(180deg);
+        opacity: 0.6;
+        background: radial-gradient(circle, rgba(255, 152, 0, 0.6) 0%, transparent 70%);
+    }
+    75% {
+        transform: scale(0.9) rotate(270deg);
+        opacity: 0.9;
+        background: radial-gradient(circle, rgba(139, 195, 74, 0.9) 0%, transparent 70%);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+        background: radial-gradient(circle, rgba(76, 175, 80, 1) 0%, rgba(139, 195, 74, 0.8) 70%);
+    }
+}
+
+/* =============================================================================
+   WATER SPLITTING ANIMATIONS
+   ============================================================================= */
+
+@keyframes waterSplit {
+    0% {
+        transform: scale(1);
+        border-radius: 50%;
+    }
+    25% {
+        transform: scale(1.1);
+        border-radius: 40%;
+    }
+    50% {
+        transform: scale(1.3) rotateY(180deg);
+        border-radius: 30%;
+    }
+    75% {
+        transform: scale(0.8) rotateY(360deg);
+        border-radius: 20%;
+    }
+    100% {
+        transform: scale(0.5);
+        border-radius: 10%;
+        opacity: 0;
+    }
+}
+
+@keyframes oxygenBubble {
+    0% {
+        transform: translateY(0px) scale(0.5);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-30px) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-60px) scale(1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes hydrogenFlow {
+    0% {
+        transform: translateX(0px) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100px) scale(0.8);
+        opacity: 0.3;
+    }
+}
+
+/* =============================================================================
+   INTERACTIVE ELEMENT ANIMATIONS
+   ============================================================================= */
+
+@keyframes clickRipple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+@keyframes hoverGlow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(45, 80, 22, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(45, 80, 22, 0.8);
+    }
+}
+
+@keyframes morphButton {
+    0% {
+        border-radius: 25px;
+        transform: scale(1);
+    }
+    50% {
+        border-radius: 15px;
+        transform: scale(1.05);
+    }
+    100% {
+        border-radius: 25px;
+        transform: scale(1);
+    }
+}
+
+/* =============================================================================
+   LOADING & TRANSITION ANIMATIONS
+   ============================================================================= */
+
+@keyframes skeletonLoading {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: calc(200px + 100%) 0;
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =============================================================================
+   COMPLEX PROCESS ANIMATIONS
+   ============================================================================= */
+
+@keyframes photosynthesisComplete {
+    0% {
+        transform: scale(1) rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    25% {
+        transform: scale(1.1) rotate(90deg);
+        filter: hue-rotate(90deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        filter: hue-rotate(180deg);
+    }
+    75% {
+        transform: scale(1.1) rotate(270deg);
+        filter: hue-rotate(270deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes chainReaction {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    20% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    60% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    80% {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes metabolicPathway {
+    0% { 
+        stroke-dasharray: 0, 1000; 
+        stroke: #4CAF50;
+    }
+    25% { 
+        stroke-dasharray: 250, 1000; 
+        stroke: #8BC34A;
+    }
+    50% { 
+        stroke-dasharray: 500, 1000; 
+        stroke: #CDDC39;
+    }
+    75% { 
+        stroke-dasharray: 750, 1000; 
+        stroke: #FFC107;
+    }
+    100% { 
+        stroke-dasharray: 1000, 1000; 
+        stroke: #FF9800;
+    }
+}
+
+/* =============================================================================
+   PARTICLE SYSTEM ANIMATIONS
+   ============================================================================= */
+
+@keyframes particleSwirl {
+    0% {
+        transform: rotate(0deg) translateX(30px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg) translateX(30px) rotate(-360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes dustParticle {
+    0%, 100% {
+        transform: translateY(0px) translateX(0px) scale(1);
+        opacity: 0.7;
+    }
+    25% {
+        transform: translateY(-10px) translateX(5px) scale(1.1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-5px) translateX(-3px) scale(0.9);
+        opacity: 0.8;
+    }
+    75% {
+        transform: translateY(-15px) translateX(8px) scale(1.2);
+        opacity: 0.9;
+    }
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1) rotate(180deg);
+        opacity: 1;
+    }
+}
+
+/* =============================================================================
+   TEXT ANIMATIONS
+   ============================================================================= */
+
+@keyframes typewriter {
+    from { 
+        width: 0; 
+    }
+    to { 
+        width: 100%; 
+    }
+}
+
+@keyframes blinkCursor {
+    from, to { 
+        border-color: transparent; 
+    }
+    50% { 
+        border-color: currentColor; 
+    }
+}
+
+@keyframes textShimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes letterBounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* =============================================================================
+   SCROLL-TRIGGERED ANIMATIONS
+   ============================================================================= */
+
+.animate-in {
+    animation: fadeInScale 0.6s ease-out forwards;
+}
+
+.animate-slide-left {
+    animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-right {
+    animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+    animation: slideInFromBottom 0.8s ease-out forwards;
+}
+
+.animate-slide-down {
+    animation: slideInFromTop 0.8s ease-out forwards;
+}
+
+/* =============================================================================
+   HOVER EFFECTS
+   ============================================================================= */
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-rotate {
+    transition: transform 0.3s ease;
+}
+
+.hover-rotate:hover {
+    transform: rotate(5deg);
+}
+
+.hover-glow {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+    animation: hoverGlow 2s ease-in-out infinite;
+}
+
+/* =============================================================================
+   INTERACTIVE MOLECULE ANIMATIONS
+   ============================================================================= */
+
+.molecule-interactive {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.molecule-interactive:hover {
+    animation: moleculeBounce 2s ease-in-out infinite;
+}
+
+.molecule-interactive:active {
+    animation: energyPulse 0.5s ease-out;
+}
+
+.molecule-orbit {
+    animation: moleculeOrbit 10s linear infinite;
+}
+
+.electron-flow {
+    animation: electronFlow 2s ease-in-out infinite;
+}
+
+/* =============================================================================
+   RESPONSIVE ANIMATIONS
+   ============================================================================= */
+
+@media (max-width: 768px) {
+    .chloroplast-3d {
+        animation-duration: 8s;
+    }
+    
+    .thylakoid {
+        animation-duration: 4s;
+    }
+    
+    .light-ray {
+        animation-duration: 3s;
+    }
+    
+    .molecule-interactive:hover {
+        animation: none;
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .animate-in {
+        animation-duration: 0.4s;
+    }
+    
+    .hover-lift:hover {
+        transform: translateY(-5px);
+    }
+    
+    .particle {
+        animation-duration: 6s;
+    }
+}
+
+/* =============================================================================
+   REDUCED MOTION SUPPORT
+   ============================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =============================================================================
+   HIGH CONTRAST SUPPORT
+   ============================================================================= */
+
+@media (prefers-contrast: high) {
+    .molecule {
+        border: 2px solid currentColor;
+    }
+    
+    .chloroplast-body::before {
+        box-shadow: none;
+        border: 3px solid currentColor;
+    }
+    
+    .thylakoid {
+        border: 1px solid currentColor;
+    }
+}
